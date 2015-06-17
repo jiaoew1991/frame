@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <form class="upload upload-form" method="post" action="/upload" enctype="multipart/form-data" style="float: left;"
+        data-type="video">
+			<div class="drop">
+				选择视频
+
+				<a>Browse</a>
+        <input type="file" name="file" id='video-file-input' />
+      </div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+
+    <form class="upload upload-form" method="post" action="/upload" enctype="multipart/form-data" style="float: right;"
+        data-type="image">
+			<div class="drop">
+				选择图像
+
+				<a>Browse</a>
+        <input type="file" name="file" id="image-file-input"/>
+      </div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+
+    <div class="upload" id="result-area">
+      <ul></ul>
+    </div>
+
+    <button id="query-button" type="submit">查询</button>
+
+  </body>
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"> </script>
+  <script src="js/jquery.knob.js"></script>
+
+  <!-- jQuery File Upload Dependencies -->
+  <script src="js/jquery.ui.widget.js"></script>
+  <script src="js/jquery.iframe-transport.js"></script>
+  <script src="js/jquery.fileupload.js"></script>
+  <script src="js/jquery.modal.js"></script>
+
+  <script src="js/index.js" type="text/javascript" charset="utf-8"> </script>
+
+</html>
